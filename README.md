@@ -1,11 +1,12 @@
 # Satisfactory ModLog Library
-Custom Modding Library to allow writing clean external log files
+Custom Log Library to allow writing clean log files for your mod
 
 Rather than finding your mod issues in the UE5 log file, this allows you to output to a custom logfile that's easier for your to parse.
 
 Includes blueprint callable logging functions as well, including the ability to override the log output to revert back to using UE_LOG so you can change the behavior of logging before packaging yuor mod.
 
-It has some configuration in the header file you will need to do before it works
+It has some configuration in the header file you will need to do before it works. 
+I suggest to call the `static void InitializeLoggingModule();` in blueprint in your GameInstance module.
 
 If you have feedback/improvements, please leave a pull request! This is very much prototype at this stage and there's a lot that can be improved.
 
